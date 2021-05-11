@@ -7,6 +7,7 @@ import {
 import './App.css';
 import About from "./Componenets/About/About";
 import Home from "./Componenets/Home/Home";
+import PostDetail from "./Componenets/PostDetail/PostDetail";
 
 function App() {
   return (
@@ -41,7 +42,9 @@ function App() {
            <Route path="/about">
             <About />
           </Route>
-          
+          <Route path="/post/:id">
+            <PostDetail/>
+          </Route>
         </Switch>
       </div>
     </Router>
